@@ -22,6 +22,7 @@ const Sidebar = ({ path, dispatch }) => (
     >
       Redux
     </Link>
+
     <span
       role="link"
       tabIndex="0"
