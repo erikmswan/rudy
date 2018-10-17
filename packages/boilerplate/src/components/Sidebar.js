@@ -15,6 +15,10 @@ const Sidebar = ({ path, dispatch }) => (
       Home
     </NavLink>
 
+    <NavLink to="/dashboard" activeClassName={styles.active}>
+      Dashboard
+    </NavLink>
+
     <Link
       role="link"
       tabIndex="0"

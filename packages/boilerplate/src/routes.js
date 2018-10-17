@@ -24,7 +24,9 @@ export default {
   },
   // eslint-disable-next-line no-console
   PATHLESS: () => console.log('PATHLESS'),
-
+  DASHBOARD: {
+    path: '/dashboard',
+  },
   LIST: {
     path: '/list/:category',
     thunk: async ({ params }) => {
