@@ -17,7 +17,11 @@ class Dashboard extends Component {
     super(props)
     console.log('Routes:', routes)
     console.log('Actions:', actions)
-    props.dispatch(actions.overview({ foo: 'bar' }))
+
+    console.log('DISPATCHING OVERVIEW ACTION FROM DASHBOARD IN 4 SECONDS')
+    setTimeout(() => {
+      props.dispatch(actions.overview({ foo: 'bar' }))
+    }, 4000)
   }
 
   render() {
