@@ -7,7 +7,7 @@ const components = {
   HOME: 'Home',
   LIST: 'List',
   NOT_FOUND: 'NotFound',
-  FOURTH: 'Item',
+  'list/FOURTH': 'Item',
 }
 
 // NOTES: this is the primary reducer demonstrating how RFR replaces the need
