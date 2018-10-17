@@ -11,6 +11,10 @@ const { actions, routes } = Rudy.createScene(
   { scene: 'DASHBOARD/OVERVIEW' },
 )
 
-const Dashboard = () => <h1>This is a nested Route!</h1>
+const Dashboard = (props) => {
+  console.log(props)
+  console.log('nested', { routes, actions })
+  return <h1>This is a nested Route!</h1>
+}
 
 export default Dashboard

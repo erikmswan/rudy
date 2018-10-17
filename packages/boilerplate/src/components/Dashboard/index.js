@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import * as Rudy from '@respond-framework/rudy'
+import { connect } from 'react-redux'
 
 const { actions, routes } = Rudy.createScene(
   {
     OVERVIEW: {
-      path: '/fourth/:foo?',
+      path: 'overview/',
       thunk: () => console.log('thunk'),
     },
   },
@@ -16,7 +17,7 @@ class Dashboard extends Component {
     super(props)
     console.log('Routes:', routes)
     console.log('Actions:', actions)
-    // props.dispatch(actions.overview({ foo: 'bar' }))
+    props.dispatch(actions.overview({ foo: 'bar' }))
   }
 
   render() {
@@ -24,4 +25,4 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard
+export default connect()(Dashboard)
